@@ -423,3 +423,91 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.navbar-default {
+  height: 40px;
+  min-height: 40px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid @grey;
+  border-radius: 0;
+  margin-bottom: 0;
+  .navbar-collapse {
+    .navbar-nav {
+    float: right;
+    padding-right: 15px;
+    li {
+      display: block;
+      width: 90%;
+      float: left;
+      line-height: 40px;
+      margin-left: 30px;
+      &:hover {
+        a {
+          background: transparent;
+          color: @orange;
+          .icons {
+            color: @orange;
+          }
+        }
+      }
+      a {
+        color: @dark;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0;
+        line-height: 40px;
+        -webkit-transition: color .3s ease;
+        -moz-transition: color .3s ease;
+        -ms-transition: color .3s ease;
+        -o-transition: color .3s ease;
+        transition: color .3s ease;
+      }
+
+    }
+  }
+    .icons {
+      color: #000;
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 5px;
+      position: relative;
+      top: -3px;
+      vertical-align: middle;
+      -webkit-transition: color .3s ease;
+      -moz-transition: color .3s ease;
+      -ms-transition: color .3s ease;
+      -o-transition: color .3s ease;
+      transition: color .3s ease;
+    }
+    .search {
+      border-left: 1px solid @grey;
+      border-right: 1px solid @grey;
+      height: 40px;
+      padding: 0 0 0 10px;
+      .icons {
+        top: 0;
+      }
+      input {
+        border: 1px solid transparent;
+        height: 39px;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar-collapse {
+  border-top: none;
+}
+
+.navbar-header {
+  border-bottom: 1px solid @grey;
+}
+
+.navbar-default .navbar-brand {
+  color: #333;
+  font-weight: bold;
+}
